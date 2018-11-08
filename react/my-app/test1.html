@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test111</title>
+</head>
+<body>
+    <script>
+        function Foo() {
+            //alert('111111')
+            return this;
+        }
+        Foo.getName = function () {
+            alert(2)
+        }
+        Foo.prototype.getName = function () {
+            alert(3)
+        }
+        function getName() {
+            alert(5)
+        }
+        //Foo.getName();2
+        //getName();5
+        //Foo().getName(); 5
+        //getName();5
+        //new Foo().getName();3
+
+        //new (new Foo().getName()); 3
+        //new (Foo.getName());2
+       //console.log(Object.prototype === Function.prototype.__proto__)
+        console.log(new Foo === window)
+
+
+        var arr = [[1,2,9],[3,4,9],[5,6,9]];
+        var res = [];
+
+        function test(arr,init,haha,mn){ // 0 2    1 1
+            console.log(arr,init,haha)
+            var len = arr[0].length;
+            let result = [];
+            for(let i=0;i<arr.length;i++){
+                if(i === arr.length - 1){
+                    for(let k=0;k<len;k++){
+                        console.log(result.concat([arr[i][k]]))
+                    }
+                }else{
+                    if(i===haha){
+                        result.push(arr[i][init])
+                    }else{
+                        result.push(arr[i][mn])
+                    }
+                }
+            }
+            if(init<len-1){
+                test(arr,init+1,haha-1,mn)
+            }
+        }
+        for(let i=0;i<arr[0].length;i++){
+            test(arr,0,arr[0].length,i);
+        }
+    </script>
+</body>
+</html>
