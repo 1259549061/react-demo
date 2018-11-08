@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Redirect ,Route,Switch } from 'react-router-dom'
+import {BrowserRouter as Router, Redirect,Switch} from 'react-router-dom'
 import './App.css';
+import AllRouter from './allRouter'
 
-import login from './component/login';
-import home from './component/home';
 
 
 class App extends Component {
@@ -15,15 +14,14 @@ class App extends Component {
     render() {
         let res;
         if (this.logined) {
-            res = (<Redirect to={'/home'}></Redirect>)
+            res = (<Redirect to={'/home'} />)
         } else {
-            res = (<Redirect to={'/login'}></Redirect>)
+            res = (<Redirect to={'/login'} />)
         }
         return (
             <Router>
                 <Switch>
-                    <Route path="/login" component={login}/>
-                    <Route path="/home" component={home}/>
+                    <AllRouter></AllRouter>
                     {res}
                 </Switch>
             </Router>

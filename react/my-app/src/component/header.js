@@ -1,11 +1,10 @@
 import React ,{Component} from 'react';
-import {BrowserRouter as Router, Route, Link,Switch} from 'react-router-dom';
 import { Button,Menu} from 'element-react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
     render(){
         return (
-            <Router>
                 <div>
                     <div className="header">
                         <span className="mLeft20">my test for react</span>
@@ -24,14 +23,8 @@ class Header extends Component {
                             </Menu.Item>
                         </Menu>
                         <div className="line" />
-                        <Switch>
-                            <Route path="/home" />
-                            <Route path="/chart" />
-                            <Route path="/system" />
-                        </Switch>
                     </div>
                 </div>
-            </Router>
         )
     }
     loginout(){

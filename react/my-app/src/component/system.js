@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import Header from './header';
 class system extends Component {
     render(){
         return (
-            <div>system</div>
+            <div>
+                <Header/>
+                <div>system</div>
+            </div>
         )
     }
 }

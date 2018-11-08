@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Header from './header';
 
 class Chart extends Component {
     render(){
         return (
-            <div>chart</div>
+            <div>
+                <Header/>
+                <div>chart</div>
+            </div>
         )
     }
 
