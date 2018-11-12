@@ -1,0 +1,190 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b8e5f8; }
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
+
+.w100 {
+  width: 100%; }
+
+.h100 {
+  height: 100%; }
+
+.flex {
+  display: flex; }
+
+.aic {
+  align-items: center; }
+
+.jcc {
+  justify-content: center; }
+
+.jcb {
+  justify-content: space-between; }
+
+.jca {
+  justify-content: space-around; }
+
+.textCenter {
+  text-align: center; }
+
+.pointer {
+  cursor: pointer; }
+
+.mTop10 {
+  margin-top: 10px; }
+
+.mTop20 {
+  margin-top: 20px; }
+
+.mTop30 {
+  margin-top: 30px; }
+
+.mTop40 {
+  margin-top: 40px; }
+
+.mTop50 {
+  margin-top: 50px; }
+
+.mLeft10 {
+  margin-left: 10px; }
+
+.mLeft20 {
+  margin-left: 20px; }
+
+.mLeft30 {
+  margin-left: 30px; }
+
+.mLeft40 {
+  margin-left: 40px; }
+
+.mLeft50 {
+  margin-left: 50px; }
+
+.mRight10 {
+  margin-right: 10px; }
+
+.mRight20 {
+  margin-right: 20px; }
+
+.mRight30 {
+  margin-right: 30px; }
+
+.mRight40 {
+  margin-right: 40px; }
+
+.mRight50 {
+  margin-right: 50px; }
+
+.mBottom10 {
+  margin-bottom: 10px; }
+
+.mBottom20 {
+  margin-bottom: 20px; }
+
+.mBottom30 {
+  margin-bottom: 30px; }
+
+.mBottom40 {
+  margin-bottom: 40px; }
+
+.mBottom50 {
+  margin-bottom: 50px; }
+
+._login {
+  width: 100%; }
+  ._login .login_back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/login_back.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    ._login .login_back .login_main_box {
+      width: 430px;
+      height: 600px;
+      overflow: hidden; }
+      ._login .login_back .login_main_box .usermain {
+        width: 100%;
+        height: 500px;
+        background-color: #ffffff;
+        position: relative; }
+        ._login .login_back .login_main_box .usermain .txnr {
+          padding: 20px 30px; }
+          ._login .login_back .login_main_box .usermain .txnr .xieyi {
+            color: #8590a6; }
+        ._login .login_back .login_main_box .usermain .yiyou {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: #b8e5f8;
+          font-size: 16px;
+          text-align: center;
+          height: 50px;
+          line-height: 50px; }
+        ._login .login_back .login_main_box .usermain .font1 {
+          width: 100%;
+          height: 80px;
+          line-height: 80px;
+          font-size: 50px;
+          color: #2d69b4;
+          text-align: center;
+          margin-top: 20px; }
+        ._login .login_back .login_main_box .usermain .font2 {
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          font-size: 18px;
+          color: #2d69b4;
+          text-align: center; }
+        ._login .login_back .login_main_box .usermain .shouji {
+          padding: 10px;
+          display: flex; }
+          ._login .login_back .login_main_box .usermain .shouji .iconfont.icon-shouji, ._login .login_back .login_main_box .usermain .shouji .iconfont.icon-mima {
+            font-size: 21px;
+            margin-left: 30px; }
+          ._login .login_back .login_main_box .usermain .shouji Select {
+            width: 130px;
+            border: none;
+            outline: none; }
+          ._login .login_back .login_main_box .usermain .shouji input {
+            flex: 1;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #dddddd;
+            border-radius: 0;
+            height: 32px; }
+        ._login .login_back .login_main_box .usermain .yanzhengma {
+          padding: 10px;
+          position: relative; }
+          ._login .login_back .login_main_box .usermain .yanzhengma input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #dddddd;
+            border-radius: 0;
+            height: 32px; }
+          ._login .login_back .login_main_box .usermain .yanzhengma .huoquyzm {
+            position: absolute;
+            right: 14px;
+            top: 15px;
+            color: #2d69b4; }
+  ._login .minHeight {
+    min-height: 620px;
+    overflow: auto; }
+  ._login input {
+    width: 100%; }
+  ._login .down_box {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #7a859c;
+    color: #ffffff; }
