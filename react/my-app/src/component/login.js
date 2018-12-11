@@ -5,7 +5,8 @@ class Login extends Component {
     constructor(){
         super();
         this.state = {
-            iszhuce : 1
+            iszhuce : 1,
+            test:0
         };
     }
     render() {
@@ -38,18 +39,18 @@ class Login extends Component {
             main_render = <div className={'w100'}>
                 <div className={'txnr'}>
                     <div className={'w100 shouji'}>
-                        <i className={'iconfont icon-shouji'} style={{'margin-left':0}}></i>
+                        <i className={'iconfont icon-shouji'} style={{'marginLeft':0}}></i>
                         <input placeholder={'请输入手机号'}/>
                     </div>
                     <div className={'w100 shouji'}>
-                        <i className={'iconfont icon-mima'} style={{'margin-left':0}}></i>
+                        <i className={'iconfont icon-mima'} style={{'marginLeft':0}}></i>
                         <input placeholder={'请输入密码'}/>
                     </div>
                     <div className={'w100 flex jcb'}>
                         <a style={{'padding':'0 14px 20px 14px'}}>手机验证码登录</a>
                         <a style={{'padding':'0 14px 20px 14px'}}>忘记密码？</a>
                     </div>
-                    <Button type={'primary'} className={'zhuceBut w100 mTop50'} style={{height:'32px','margin-top':'9px'}} onClick={this.login.bind(this)}>登录</Button>
+                    <Button type={'primary'} className={'zhuceBut w100 mTop50'} style={{height:'32px','marginTop':'9px'}} onClick={this.login.bind(this)}>登录</Button>
                 </div>
                 <div className={'yiyou'}>没有账号？<a className={'tologin'} onClick={this.toLogin.bind(this,'tozhuce')}>注册</a></div>
             </div>
@@ -64,7 +65,7 @@ class Login extends Component {
                                 <div className={'w100 font2'}>{this.state.iszhuce===1?'注册':'登录'}xx,发现更大的世界</div>
                                 { main_render }
                             </div>
-                            <div className={'down_box mTop20'}>下载xx App</div>
+                            <div className={'down_box mTop20'} onClick={this.download}>下载xx App</div>
                         </div>
                     </div>
                 </div>
@@ -78,6 +79,9 @@ class Login extends Component {
     }
     login(){
         this.props.history.push('/home');
+    }
+    download(){
+        console.log('download');
     }
 }
 export default Login
