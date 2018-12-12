@@ -1,7 +1,6 @@
 import React ,{Component} from 'react';
-import { Button} from 'element-react';
 // import {Link} from 'react-router-dom';
-import { Input } from 'antd';
+import { Input,Icon } from 'antd';
 const Search = Input.Search;
 
 class Header extends Component {
@@ -9,18 +8,24 @@ class Header extends Component {
         return (
                 <div className="headerBox">
                     <div className="header">
-                        <span className="mLeft20">my test for react</span>
-                        <Button type="primary" size="small" className="mRight20" onClick={this.loginout.bind(this)}>login out</Button>
-                        <div className='navBox'>
-                            <a>首页</a>
-                            <a>发现</a>
-                            <a>话题</a>
-                            <Search
-                                placeholder="input search text"
-                                onSearch={value => console.log(value)}
-                                enterButton
-                                style={{ width: 300 }}
-                            />
+                        <div style={{width:'100px',fontWeight:'bolder'}}>React Test</div>
+                        <div className={'flex w100'}>
+                            <div className='navBox'>
+                                <a>首页</a>
+                                <a>发现</a>
+                                <a>话题</a>
+                                <Search
+                                    placeholder="input search text"
+                                    onSearch={value => console.log(value)}
+                                    enterButton
+                                    style={{ width: 300 }}
+                                />
+                            </div>
+                            <div className={'flex1 aic flex jce'}>
+                                <Icon type="bell" className={"fontSize mRight40"}/>
+                                <Icon type="switcher" className={"fontSize mRight40"}/>
+                                <Icon type="user" className={"fontSize"}/>
+                            </div>
                         </div>
                     </div>
                 </div>

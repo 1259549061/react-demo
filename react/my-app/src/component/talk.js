@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import Header from './header';
-
-class Chart extends Component {
+class Talk extends Component {
     render(){
         return (
             <div>
                 <Header/>
-                <div>chart</div>
+                <div>Talk</div>
             </div>
         )
     }
-
 }
-
-
-export default Chart
+export default Talk

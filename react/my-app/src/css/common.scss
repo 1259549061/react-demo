@@ -1,8 +1,9 @@
+@import "color";
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #b8e5f8;
+  background-color: $backColor;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
 }
 .h100 {
   height: 100%;
+}
+.flex1{
+  flex: 1;
 }
 .flex {
   display: flex;
@@ -28,6 +32,9 @@ body {
 }
 .jca{
   justify-content: space-around;
+}
+.jce{
+  justify-content: flex-end;
 }
 .textCenter {
   text-align: center;

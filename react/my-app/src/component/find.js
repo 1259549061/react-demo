@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Header from './header';
-class system extends Component {
+
+class Find extends Component {
     render(){
         return (
             <div>
                 <Header/>
-                <div>system</div>
+                <div>Find</div>
             </div>
         )
     }
+
 }
-export default system
+
+
+export default Find

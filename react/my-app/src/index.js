@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css'
-import './css/App.css';
+import './css/main.scss';
 import App from './App';
 
 // import { Provider } from 'react-redux'
