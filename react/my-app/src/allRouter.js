@@ -13,14 +13,13 @@ class AllRouter extends Component{
                     <Route path="/" exact render={()=>(this.reRouter())}/>
                     <Route path="/login" component={login}/>
                     <Route path="/home" component={home}/>
-                    <Route path="/chart" component={find}/>
-                    <Route path="/system" component={talk}/>
+                    <Route path="/find" component={find}/>
+                    <Route path="/talk" component={talk}/>
                 </Switch>
             </Router>
         )
     }
     reRouter(){
-        console.log(1)
         if(true){ //ajax
             return (
                 <Redirect to={'/login'} />

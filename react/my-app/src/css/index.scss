@@ -1,3 +1,4 @@
+@import "color";
 .chart_input {
   display: flex;
   width: 100%;
@@ -17,7 +18,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    a{
+    .nava{
       margin-left: 40px;
     }
     .navBox{
@@ -28,6 +29,42 @@
     }
     .fontSize{
       font-size: 26px;
+      color: rgba(0,0,0,0.5);
+    }
+    .out{
+      position: absolute;
+      top: 42px;
+      right: -35px;
+      width: 100px;
+      background-color: #ffffff;
+      border:1px solid $border-color;
+      .sanjiao{
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        border: 1px solid $border-color;
+        position: absolute;
+        top: -6px;
+        left: 44px;
+        border-bottom: none;
+        border-right: none;
+      }
+      a{
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: rgba(0,0,0,0.6);
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+          color: $main-color;
+          background-color: rgba(73, 61, 69, 0.04);
+        }
+      }
     }
   }
 }

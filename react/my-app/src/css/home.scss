@@ -1,5 +1,5 @@
 @import "color";
-.home{
+.home,.find,.talk{
   .main_box{
     width: 1000px;
     margin: 10px auto;
@@ -77,26 +77,27 @@
       }
     }
   }
-  .tuijian{
-    padding: 20px;
-    border-bottom: 1px solid $border-color;
-    .tj_title{
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .tj_do{
-      display: flex;
-      height: 40px;
-      align-items: center;
-      justify-content: space-around;
-    }
-    a{
-      color: rgba(39, 15, 42, 0.5);
-      display: flex;
-      align-items: center;
-      span{
-        margin-left: 10px;
-      }
+}
+
+.tuijian{
+  padding: 20px;
+  border-bottom: 1px solid $border-color;
+  .tj_title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .tj_do{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  a{
+    color: rgba(39, 15, 42, 0.5);
+    display: flex;
+    align-items: center;
+    span{
+      margin-left: 10px;
     }
   }
 }

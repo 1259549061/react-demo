@@ -1,12 +1,16 @@
-import React ,{Component} from 'react';
+import React ,{PureComponent} from 'react';
 import { Icon } from 'antd';
 
-class UserCaozuo extends Component {
+class UserCaozuo extends PureComponent {
+    constructor(props){
+        super(props)
+
+    }
     render(){
         return (
             <div className={'right_box'}>
                 <div className={'write'}>
-                    <div className={'write_content'}>
+                    <div className={'write_content'} onClick={()=>{this.props.writeTest('write')}}>
                         <Icon type='bars' style={{fontSize:'20px'}} />
                         <span>写回答</span>
                     </div>
