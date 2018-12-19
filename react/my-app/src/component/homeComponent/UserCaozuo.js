@@ -2,10 +2,6 @@ import React ,{PureComponent} from 'react';
 import { Icon } from 'antd';
 
 class UserCaozuo extends PureComponent {
-    constructor(props){
-        super(props)
-
-    }
     render(){
         return (
             <div className={'right_box'}>

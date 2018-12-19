@@ -3,9 +3,6 @@ import Header from './header';
 import UserCaozuo from './homeComponent/UserCaozuo';
 
 class Find extends Component {
-    constructor(props){
-        super(props);
-    }
     render(){
         return (
             <div className={'find'}>
@@ -18,8 +15,6 @@ class Find extends Component {
             </div>
         )
     }
-
 }
-
 
 export default Find

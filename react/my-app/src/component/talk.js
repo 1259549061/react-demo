@@ -3,9 +3,6 @@ import Header from './header';
 import UserCaozuo from './homeComponent/UserCaozuo';
 
 class Talk extends Component {
-    constructor(props){
-        super(props);
-    }
     render(){
         return (
             <div className={'talk'}>

@@ -1,11 +1,13 @@
-import React, { Component,PureComponent } from 'react';
+import React, { Component } from 'react';
 import { Menu, Icon,Select,Button ,message} from 'antd';
 import Header from './header'
 import Tuijian from './homeComponent/Tuijian'
 import UserCaozuo from './homeComponent/UserCaozuo'
+import {testAdd1} from "../actions/index";
+
 const Option = Select.Option;
 
-class Home extends PureComponent {
+class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -14,7 +16,8 @@ class Home extends PureComponent {
             guanzhu_num : Array.from({length:5}).map((val,ind)=>{return ind + 2}),
             rebang_num : Array.from({length:5}).map((val,ind)=>{return ind + 3}),
             selected:'lucy',
-            value:'lucy'
+            value:'lucy',
+            firstValue:0
         }
     }
     handleClick = (e) => {
@@ -85,12 +88,28 @@ class Home extends PureComponent {
                             <Option value="Yiminghe">yiminghe</Option>
                         </Select>
                         <Button type="primary" className={'mLeft10'} onClick={this.testClick.bind(this)}>父->子</Button>
+                        <Button type="primary" className={'mLeft10'} onClick={this.reduxTest.bind(this)}>redux test</Button>
+                        <span> First value：{this.state.firstValue} </span>
                         {home_tab}
                     </div>
                     <UserCaozuo writeTest={(val)=>{this.writeTest(val)}}/>
                 </div>
             </div>
         )
+    }
+    reduxTest(){ //依赖 redux 创建全局变量
+        // 在reducer中处理dispatch的事件
+        window.store.dispatch(testAdd1('First'));
+        this.setState(
+            {
+                firstValue:window.store.getState().First
+            }
+        );
+        // 只是作为订阅者、监听者，类似于vue的$emit，$on
+        window.store.dispatch({
+            type:'msg',
+            data:'111'
+        });
     }
 }
 
